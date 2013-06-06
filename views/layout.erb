@@ -10,20 +10,17 @@
 
 <body>
 
-<div id="navigation_bar">
-  <ul>
-    <li>Your To Do List For:   <%= Date.parse(Time.now.to_s) %>
-      </li>
-    <li>
-      <form id="navbar_add" method="post" action="/new_todo">
-        <input id="navbar_input" type="text" name="todo_item" value="Add an item to your To Do List here...">
-        <button id="navbar_button" >Add</button>
+<div class="navbar">
+  <div class="navbar-inner">
+    <ul class="nav">
+      <p>Your To Do List For:  <%= Date.parse(Time.now.to_s) %></p>
+      <form class="navbar-form pull-left" method="post" action="/new_todo">
+        <input type="text" class="span2" name="todo_item" value="add an item..." >
+        <button type="submit" class="btn">Add</button>
       </form>
-    </li>
     </ul>
-</div>
-
-
+  </div>
+</div> <!--navbar-->
 
   <%= yield %>
 

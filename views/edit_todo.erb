@@ -2,5 +2,7 @@
 
 <form method="post" action="/save_todo/<%= @todo.id %>">
   <input type="text" name="todo_item" value="<%= @todo.name %>">
+  <input type="text" name="todo_description" value ="<%= @todo.description %>">
+  <input type="text" name="todo_owner" value="<%= @todo.owner %>">
   <button>Save Todos</button>
 </form>

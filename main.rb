@@ -23,7 +23,7 @@ get "/new_todo" do
 end
 
 post "/new_todo" do
-  @todo = Todo.new(:name => params[:todo_item])
+  @todo = Todo.new(:name => params[:todo_item], :description => params[:todo_description], :owner => params[:todo_owner])
 
   if @todo.save
     redirect "/"
@@ -42,13 +42,23 @@ end
 post "/save_todo/:todo_id" do
   @todo = Todo.find_by_id(params[:todo_id])
 
-  if @todo.update_attributes(:name => params[:todo_item])
+  if @todo.update_attributes(:name => params[:todo_item], :description => params[:todo_description], :owner => params[:todo_owner])
     redirect "/"
   else
     erb :edit_todo
   end
 end
 
+post "/toggle_todo/:todo_id" do
+  @todo = Todo.find_by_id(params[:todo_id])
+  if @todo.status true
+    if @todo.save
+      redirect "/"
+    else
+      erb :index
+    end
+  end
+end
 
 
 
