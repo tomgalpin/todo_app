@@ -1,0 +1,6 @@
+<p>Editing this Todo List:</p>
+
+<form method="post" action="/save_todo/<%= @todo.id %>">
+  <input type="text" name="todo_item" value="<%= @todo.name %>">
+  <button>Save Todos</button>
+</form>

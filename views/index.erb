@@ -1,0 +1,6 @@
+<% @todos.each do |todo| %>
+  <p>
+    Todo Item is:  <%= todo.name %>.
+    <a href="/edit_todo/<%= todo.id %>">Edit</a>
+  </p>
+<% end %>
