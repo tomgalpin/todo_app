@@ -1,0 +1,52 @@
+/*#navigation_bar {
+  background: black;
+  width: 100%;
+  border-radius: 5px;
+  height: 100px;
+}
+
+#navigation_bar ul{
+  color: white;
+  list-style-type: none;
+  font-size: 25px;
+
+  text-align: left;
+  vertical-align:text-top;
+}
+
+#navbar_add {
+  float: right;
+}
+
+#navbar_button {
+  font-size: 20px;
+  border-radius: 2px;
+  margin: 0 35px 45px 10px;
+  vertical-align:text-top;
+  margin: 0 30px 25px 5px;
+
+}
+
+#navbar_input {
+  font-size: 10px;
+  border-radius: 2px;
+  height: 25px;
+  width: 200px;
+/*  margin: 0 5 60px 0;
+/**/    /*vertical-align:text-top;
+*/
+/*}
+
+#container {
+  width: 100%;
+  margin: 20px 0 0 0;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.todo {
+  margin: 5px 0 5px 80px;
+}*/
+
+
+

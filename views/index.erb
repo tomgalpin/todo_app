@@ -1,6 +1,8 @@
-<% @todos.each do |todo| %>
-  <p>
-    Todo Item is:  <%= todo.name %>.
-    <a href="/edit_todo/<%= todo.id %>">Edit</a>
-  </p>
+<div id="container">
+  <% @todos.each do |todo| %>
+  <ul id="todos">
+    Do This:    <%= todo.name %>.
+    <a id="todo_item" href="/edit_todo/<%= todo.id %>">Edit</a><button id="completed_button">Completed!</button>
+  </ul>
 <% end %>
+<div>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>To Do APP</title>
+  <link rel="stylesheet" type="text/css" href="/bootstrap.css">
+  <link rel="stylesheet" href="/style.css">
+  <script type="text/javascript" src="js/.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+<div id="navigation_bar">
+  <ul>
+    <li>Your To Do List For:   <%= Date.parse(Time.now.to_s) %>
+      </li>
+    <li>
+      <form id="navbar_add" method="post" action="/new_todo">
+        <input id="navbar_input" type="text" name="todo_item" value="Add an item to your To Do List here...">
+        <button id="navbar_button" >Add</button>
+      </form>
+    </li>
+    </ul>
+</div>
+
+
+
+  <%= yield %>
+
+
+
+</body>
+</html>
